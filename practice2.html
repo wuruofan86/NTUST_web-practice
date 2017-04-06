@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="mydata" value=0>
+<input type="number" id="mydata2" value=0>
+
+<script>
+	function add(){
+		var x,y,z
+		x=document.getElementById("mydata").value;
+		y=document.getElementById("mydata2").value;
+		x=parseInt(x);
+		y=parseInt(y);
+		z=x+y;
+		document.getElementById("result").innerHTML=z;
+}
+</script>
+<script>
+	function minus(){
+		var x,y,z
+		x=document.getElementById("mydata").value;
+		y=document.getElementById("mydata2").value;
+		x=parseInt(x);
+		y=parseInt(y);
+		z=x-y;
+		document.getElementById("result").innerHTML=z;
+}
+</script>
+<script>
+	function times(){
+		var x,y,z
+		x=document.getElementById("mydata").value;
+		y=document.getElementById("mydata2").value;
+		x=parseInt(x);
+		y=parseInt(y);
+		z=x*y;
+		document.getElementById("result").innerHTML=z;
+}
+</script>
+<script>
+	function divide(){
+		var x,y,z
+		x=document.getElementById("mydata").value;
+		y=document.getElementById("mydata2").value;
+		x=parseInt(x);
+		y=parseInt(y);
+		z=x/y;
+		document.getElementById("result").innerHTML=z;
+}
+</script>
+<output  id="result"></output>
+<button onclick="add()">add</button>
+<button onclick="minus()">minus</button>
+<button onclick="times()">times</button>
+<button onclick="divide()">divide</button>
+</body>
+</html>
